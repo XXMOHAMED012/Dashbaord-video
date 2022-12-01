@@ -1,0 +1,230 @@
+/* Start Global Rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --main-transition: 0.3s;
+    --main-padding-top: 80px;
+    --main-padding-bottom: 80px;
+    --section-background: #333;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Cairo" , sans-serif;
+    background-color: #222;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-title{
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title i{
+    margin-right: 15px;
+    font-size: 34px;
+    color: orange;
+    margin-top: 10px;
+}
+
+.main-title h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #AAA;
+}
+
+@media(max-width:769px){
+    .main-title h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+
+
+/* Start Videos */
+
+.videos{
+    padding-bottom: var(--main-padding-bottom);
+}
+
+.videos .container{
+    display: grid;
+    grid-template-columns: repeat( auto-fill , minmax( 270px , 1fr ) );
+    gap: 20px;
+}
+
+.videos .container .box{
+    transition: var(--main-transition);
+}
+
+.videos .container .box:hover{
+    transform: translateY(-10px);
+}
+
+.videos .container .box:hover h3{
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.25);
+}
+
+.videos .container .box .img{
+    
+}
+
+.videos .container .box .img a img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.videos .container .box h3{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
+    background-color: #2e2e2e;
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.15);
+    transition: var(--main-transition);
+
+}
+
+/* End Videos */
+
+/* Start Explore  */
+
+.explore{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background-color: #333;
+}
+
+.explore .container{
+    display: grid;
+    grid-template-columns: repeat( auto-fill , minmax( 300px , 1fr ) );
+    gap: 40px;
+}
+
+.explore .container .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #3e3e3e;
+    padding: 20px 30px;
+    overflow: hidden;
+    border-radius: 50px 0px;
+    transition: var(--main-transition);
+    box-shadow: 0px 0px 10px var(--clr);
+}
+
+.explore .container .box:hover{
+    box-shadow: 0px 0px 35px var(--clr);
+}
+
+.explore .container .box:hover img{
+    box-shadow: 0px -1px 0px 20px #3e3e3e , 0px 2px 0px 300px var(--clr);
+    border-radius: 50%;
+}
+
+.explore .container .box img{
+    width: 70px;
+    box-shadow: 0px -1px 0px 20px #3e3e3e , 0px 2px 0px 20px var(--clr);
+    background-color: #3e3e3e;
+    margin-top: 20px;
+    transition: 0.58s;
+}
+
+.explore .container .box:hover h3{
+    color: #3e3e3e;
+}
+
+.explore .container .box h3{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 22px;
+    color: var(--clr);
+    transition: var(--main-transition);
+}
+
+.explore .container .box:hover p{
+    color: #3e3e3e;
+}
+
+.explore .container .box p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: orange;
+    text-align: center;
+    transition: var(--main-transition);
+}
+
+.explore .container .box:hover a{
+    background-color: #3e3e3e;
+    color: var(--clr);
+}
+
+.explore .container .box a{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    width: fit-content;
+    padding: 12px 35px;
+    color: #3e3e3e;
+    background-color: var(--clr);
+    border-radius: 20px 2px;
+    transition: var(--main-transition);
+}
+
+/* End Explore  */
